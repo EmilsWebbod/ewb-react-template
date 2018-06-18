@@ -1,7 +1,5 @@
-// import StoreComponent from './modules/+store/Store.component';
 import AboutComponent from './modules/about/About.component';
 import HomePageComponent from './modules/core/HomePage/HomePage.component';
-// import {storeRoutes} from './modules/+store/Store.router';
 
 export interface IPath {
   path?: string;
