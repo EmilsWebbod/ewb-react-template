@@ -1,5 +1,5 @@
-import AboutComponent from './modules/about/About.component';
-import HomePageComponent from './modules/core/HomePage/HomePage.component';
+import AboutComponent from './views/about/About.component';
+import HomePageComponent from './views/core/HomePage/HomePage.component';
 
 export interface IPath {
   path?: string;

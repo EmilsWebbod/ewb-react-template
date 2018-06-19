@@ -1,7 +1,6 @@
 import { createBrowserHistory } from 'history';
 import { routerMiddleware, routerReducer } from 'react-router-redux';
 import { applyMiddleware, combineReducers, compose, createStore } from 'redux';
-import thunkMiddleware from 'redux-thunk';
 
 import DevTools from './DevTools';
 import reducers from './reducers';
@@ -12,7 +11,7 @@ const middleware = routerMiddleware(history);
 const initialState = {};
 
 const enhancer = compose(
-  applyMiddleware(thunkMiddleware, middleware),
+  applyMiddleware(middleware),
   DevTools.instrument()
 );
 

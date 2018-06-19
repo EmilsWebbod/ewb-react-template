@@ -1,6 +1,5 @@
-
-import {IPath} from '../../App.router';
-import AboutUsComponent from './AboutUsComponent/AboutUs.Component';
+import { IPath } from '../../App.router';
+import AboutUsComponent from './AboutUsComponent/AboutUs.component';
 
 export const aboutRoutes: IPath[] = [
   {

@@ -12,18 +12,18 @@ const HomePage = styled.div`
 
 export default class HomePageComponent extends Component<object, State> {
   public state: State = initialState;
-
-  public render() {
-    const Comp = TestReduxComponent.mapToProps({
-      stateToProps: (state: any) => ({test: 'Coolio'})
-    });
-
+  
+  public render () {
+    const Comp = TestReduxComponent.mapToProps( {
+      stateToProps: (state: any) => ({ test: 'Coolio' })
+    } );
+    
     const {} = this.props;
     return (
       <HomePage>
         HomePageComponent
-
-        <Comp />
+        
+        <Comp/>
       </HomePage>
     );
   }

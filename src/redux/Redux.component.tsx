@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { connect } from 'react-redux';
 import { withRouter } from 'react-router';
-import { IReducers } from '../reducers/interfaces';
+import { IReducers } from './interfaces';
 
 export interface IMapToProps {
   dispatchToProps?: (dispatch: any) => any;
@@ -12,25 +12,25 @@ export interface IMapToProps {
 
 export const DEFAULT_PROPS: IMapToProps = {
   dispatchToProps: dispatch => ({}),
-  stateToProps:    (state: any) => ({}),
-  styles:          null,
-  withRouter:      false
+  stateToProps: (state: any) => ({}),
+  styles: null,
+  withRouter: false
 };
 
 abstract class ReduxComponent<T = object, TT = object> extends React.Component<T, TT> {
-
-  public static init() {
+  
+  public static init () {
     return this.mapToProps();
   }
-
-  public static mapToProps(obj: IMapToProps = DEFAULT_PROPS) {
+  
+  public static mapToProps (obj: IMapToProps = DEFAULT_PROPS) {
     const self: any = this;
-    const connected: any = connect(obj.stateToProps, obj.dispatchToProps)(self);
-    return obj.withRouter ? withRouter(connected) : connected;
+    const connected: any = connect( obj.stateToProps, obj.dispatchToProps )( self );
+    return obj.withRouter ? withRouter( connected ) : connected;
   }
-
-  constructor(props?: any) {
-    super(props);
+  
+  protected constructor (props?: any) {
+    super( props );
   }
 }
 

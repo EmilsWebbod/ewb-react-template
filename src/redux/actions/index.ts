@@ -1,2 +1,2 @@
-import * as action from './actions';
-export {action};
+const actions = {};
+export { actions };

@@ -6,14 +6,14 @@ const Head = () => (
     <title>Emils WebBod</title>
     <meta
       name="description"
-      content="A start shop consept."
+      content="content"
     />
-    <meta property="og:site_name" content="Shopping"/>
+    <meta property="og:site_name" content="site name"/>
     <meta
       property="og:image"
       content="https://www.cleverfranke.com/images/CLEVER-FRANKE-Data-Visualization.jpg"
     />
-    <meta property="og:locale" content="en_US"/>
+    <meta property="og:locale" content="no_NB"/>
     <meta property="og:title" content="Emils WebBod"/>
     <meta
       property="og:description"

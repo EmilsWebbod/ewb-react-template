@@ -2,7 +2,7 @@ import * as React from 'react';
 import {NavLink} from 'react-router-dom';
 
 import routes from './App.router';
-import ReduxComponent from './redux/components/Redux.component';
+import ReduxComponent from './redux/Redux.component';
 import RouteWithSubRoutes from './shared/RoutesWithSubRoutes/RoutesWithSubRoutes.component';
 
 interface IProps {

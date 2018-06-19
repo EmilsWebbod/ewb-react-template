@@ -1,6 +1,6 @@
 import * as React from 'react';
 import styled from 'styled-components';
-import ReduxComponent, {IMapToProps} from '../../../redux/components/Redux.component';
+import ReduxComponent, {IMapToProps} from '../../../redux/Redux.component';
 
 interface IProps {
   test: any;
